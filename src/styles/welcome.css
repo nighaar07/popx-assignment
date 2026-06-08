@@ -1,0 +1,46 @@
+.welcome-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 20px;
+}
+
+.welcome-content h1 {
+  font-size: 28px;
+  color: #1d2226;
+  margin-bottom: 10px;
+}
+
+.welcome-content p {
+  color: #7b7b7b;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-btn {
+  background: #6c25ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.login-btn {
+  background: #cebafb;
+  color: #1d2226;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}

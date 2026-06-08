@@ -18,23 +18,29 @@
 }
 
 .input-group {
-  margin-bottom: 18px;
+  position: relative;
+  margin-bottom: 22px;
 }
 
 .input-group label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background: #f7f8f9;
+  padding: 0 5px;
   color: #6c25ff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  display: block;
-  margin-bottom: 6px;
+  z-index: 1;
 }
 
 .input-group input {
   width: 100%;
-  padding: 14px;
+  padding: 16px 14px;
   border: 1px solid #cbcbcb;
   border-radius: 6px;
   font-size: 14px;
+  background: white;
 }
 
 .agency-section {
@@ -67,4 +73,9 @@
   border-radius: 6px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.required {
+  color: #ff0000;
+  margin-left: 2px;
 }

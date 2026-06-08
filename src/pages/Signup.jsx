@@ -22,23 +22,23 @@ function Signup() {
   };
 
   const handleSubmit = () => {
-  if (
-    !formData.fullName ||
-    !formData.phone ||
-    !formData.email ||
-    !formData.password
-  ) {
-    alert("Please fill all required fields");
-    return;
-  }
+    if (
+      !formData.fullName ||
+      !formData.phone ||
+      !formData.email ||
+      !formData.password
+    ) {
+      alert("Please fill all required fields");
+      return;
+    }
 
-  localStorage.setItem(
-    "user",
-    JSON.stringify(formData)
-  );
+    localStorage.setItem(
+      "user",
+      JSON.stringify(formData)
+    );
 
-  navigate("/profile");
-};
+    navigate("/profile");
+  };
 
   return (
     <div className="mobile-container">
@@ -52,7 +52,9 @@ function Signup() {
         <div className="signup-form">
 
           <div className="input-group">
-            <label>Full Name*</label>
+            <label>
+              Full Name<span className="required">*</span>
+            </label>
             <input
               type="text"
               name="fullName"
@@ -63,7 +65,9 @@ function Signup() {
           </div>
 
           <div className="input-group">
-            <label>Phone Number*</label>
+            <label>
+              Phone Number<span className="required">*</span>
+            </label>
             <input
               type="text"
               name="phone"
@@ -74,7 +78,9 @@ function Signup() {
           </div>
 
           <div className="input-group">
-            <label>Email Address*</label>
+            <label>
+              Email Address<span className="required">*</span>
+            </label>
             <input
               type="email"
               name="email"
@@ -85,7 +91,9 @@ function Signup() {
           </div>
 
           <div className="input-group">
-            <label>Password*</label>
+            <label>
+              Password<span className="required">*</span>
+            </label>
             <input
               type="password"
               name="password"
@@ -107,7 +115,10 @@ function Signup() {
           </div>
 
           <div className="agency-section">
-            <p>Are you an Agency?*</p>
+            <p>
+              Are you an Agency?
+              <span className="required">*</span>
+            </p>
 
             <div className="radio-group">
               <label>

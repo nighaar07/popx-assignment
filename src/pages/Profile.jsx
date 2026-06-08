@@ -5,10 +5,7 @@ function Profile() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const storedUser = JSON.parse(
-      localStorage.getItem("user")
-    );
-
+    const storedUser = JSON.parse(localStorage.getItem("user"));
     setUser(storedUser);
   }, []);
 
@@ -20,14 +17,19 @@ function Profile() {
 
       {user && (
         <div className="profile-content">
-
           <div className="profile-info">
 
-            <div className="avatar">
-              <img
-                src="https://i.pravatar.cc/100"
-                alt="profile"
-              />
+            <div className="avatar-wrapper">
+              <div className="avatar">
+                <img
+                  src="https://i.pravatar.cc/100"
+                  alt="profile"
+                />
+              </div>
+
+              <div className="camera-icon">
+                📷
+              </div>
             </div>
 
             <div>
@@ -44,7 +46,6 @@ function Profile() {
             Labore Et Dolore Magna Aliquyam Erat,
             Sed Diam.
           </div>
-
         </div>
       )}
     </div>

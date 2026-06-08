@@ -22,13 +22,23 @@ function Signup() {
   };
 
   const handleSubmit = () => {
-    localStorage.setItem(
-      "user",
-      JSON.stringify(formData)
-    );
+  if (
+    !formData.fullName ||
+    !formData.phone ||
+    !formData.email ||
+    !formData.password
+  ) {
+    alert("Please fill all required fields");
+    return;
+  }
 
-    navigate("/profile");
-  };
+  localStorage.setItem(
+    "user",
+    JSON.stringify(formData)
+  );
+
+  navigate("/profile");
+};
 
   return (
     <div className="mobile-container">

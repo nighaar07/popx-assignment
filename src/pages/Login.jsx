@@ -5,8 +5,15 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate("/profile");
-  };
+  const user = localStorage.getItem("user");
+
+  if (!user) {
+    alert("Please create an account first");
+    return;
+  }
+
+  navigate("/profile");
+};
 
   return (
     <div className="mobile-container">

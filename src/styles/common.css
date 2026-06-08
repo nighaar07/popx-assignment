@@ -17,5 +17,8 @@ body {
   width: 375px;
   height: 812px;
   background: #f7f8f9;
-  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }

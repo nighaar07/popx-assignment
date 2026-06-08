@@ -1,0 +1,47 @@
+.login-container {
+  padding: 40px 20px;
+}
+
+.login-container h1 {
+  font-size: 30px;
+  color: #1d2226;
+  margin-bottom: 14px;
+}
+
+.login-container p {
+  color: #7b7b7b;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #6c25ff;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #cbcbcb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}

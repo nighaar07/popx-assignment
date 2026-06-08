@@ -1,0 +1,70 @@
+.signup-container {
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #1d2226;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  color: #6c25ff;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.agency-section {
+  margin-top: 10px;
+}
+
+.agency-section p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.create-account-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 14px;
+  background: #6c25ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}

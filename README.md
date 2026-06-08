@@ -34,8 +34,8 @@ npm run build
 
 ## Live Demo
 
-Add your Vercel URL here.
+https://popx-assignment-1e6u4r8w9-nighaar-s-projects.vercel.app/
 
 ## GitHub Repository
 
-Add your GitHub repository URL here.
+https://github.com/nighaar07/popx-assignment
